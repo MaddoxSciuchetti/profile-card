@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@100..900,300&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Profile card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    *{
+      box-sizing: border-box;
+      padding: 0; 
+      margin: 0;
+      font-family: "Kumbh Sans";
+    }
+
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh; 
+      background-color: hsl(185, 75%, 39%);
+    }
+
+    .contents {
+
+      border-radius: 20px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+    }
+
+    .bottom-img{
+      align-items: center;
+      margin: -55px auto; 
+    }
+
+    .profile-img{
+      margin: auto;
+    
+    }
+
+  
+    .background-img{
+      overflow: hidden;
+      width: 100%;
+      min-width: 100%;
+      background-position: top;
+      object-fit: cover;
+      overflow: hidden;
+
+    }
+
+    .top-img{
+      overflow:hidden;
+      object-fit: cover;
+      overflow: hidden;
+    }
+
+    .profile-img{
+      width: 100px;
+      margin: auto;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      border-radius: 50px;
+      border: solid white;
+    }
+
+    .name{
+      display: flex;
+      justify-content: center;
+
+
+    }
+
+    .Number {
+      margin-left: 5px;
+      font-size: 18px;
+      font-weight: 400;
+      color: hsl(227, 10%, 46%);
+      font-family: "Kumbh Sans";
+    }
+
+    .london {
+      margin-top: 10px;
+      color: hsl(227, 10%, 46%); 
+
+    }
+
+    .Victor {
+      font-size: 18px;
+      font-weight: 600;
+      color: hsl(229, 23%, 23%);
+    }
+
+    .bottom-content{
+      margin-top: 70px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+
+
+    .stats{
+      font-size: 18px;
+      display: flex;
+      justify-content: space-around;
+      margin: 20px;
+      grid-template-columns: 1fr 1fr 1fr;
+
+
+    }
+
+    .london {
+      margin-bottom: 30px;
+    }
+
+    .followers {
+      font-weight: 600;
+      font-size: 18px;
+      color: hsl(229, 23%, 23%);
+    }
+
+    .hr{
+      color: white
+    }
+
+    .description {
+      font-size: 12px;
+      font-weight: 400;
+      color: hsl(227, 10%, 46%); 
+      margin-top: 6px;
+    }
+
+
+    
+    
+
+
+  
+
+    
+    
+
+
+    
+
+    
+    
+
+  </style>
+</head>
+<body>
+
+  <main class="main">
+  
+    <div class="contents">
+      
+      <div class="image-pair">
+        <div class="top-img">
+          <img class="background-img" src="images/bg-pattern-card.svg" alt="text"/>
+        </div>
+  
+        <div class="bottom-img">
+          <img class="profile-img" src="images/image-victor.jpg" alt="text"/>
+        </div>
+  
+      </div>
+
+      <div class="bottom-content">
+
+        <div class="name">
+          <p class="Victor">Victor Crest</p><p class="Number">26</p></span>
+        </div>
+        
+        <p class="london">London</p>
+        
+          <hr class="hr">
+          <div class="stats">
+            <div class="stats-sub">
+              <p class="followers">80K</p>
+              <p class="description">Followers</p>
+            </div>
+    
+            <div class="stats-sub">
+            
+              <p class="followers">803K</p>
+              <p class="description">Likes</p>
+            </div>
+            
+            <div class="stats-sub">
+  
+              <p class="followers">1.4K</p>
+              <p class="description">Photos</p>
+    
+            </div>
+  
+  
+        </div>
+        
+      </div>
+      
+        
+        
+
+
+    </div>
+  
+  </main>
+</body>
+</html>
